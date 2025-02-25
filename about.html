@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77aaff 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        .main {
+            padding: 20px;
+            background: #fff;
+            margin-top: 20px;
+        }
+        .return-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>About Me</h1>
+        </div>
+    </header>
+    <div class="container main">
+        <h2>Hello, I'm Alan Biju</h2>
+        <p>Welcome to my personal page. Here is a little bit about myself:</p>
+        <p><ul>I am a bachelor's student in AI and Data Science at the University of Northampton.</ul><ul> My journey in education began in Kerala, where I completed my higher secondary education at GHSS Sadhanadhapuram with full A+ and a 92.45% score.</ul><ul> I also passed my SSLC with full A+ at St. Mary's HSS Kizhekketheruvu, achieving above 90%.</ul><ul> My professional experience spans various roles, including billing assistant at a dry-clean shop, waiter at Cousins Restaurant, hospitality staff at Constellation, and care home worker.</ul><ul> My skills include writing, Microsoft Excel, Word, PowerPoint, coding, and cooking.</ul><ul> I am passionate about soccer, writing, reading, artificial intelligence, and enjoying nature.</ul><ul> My achievements include district-level A grade in the Young Innovators Program 2024 and third position in the Kerala school-level science fair 2024. I have also participated twice in the Young Innovators Program and have received various scholarships.</ul></p>
+        <button class="return-button" onclick="goBack()">Return</button>
+    </div>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+    <style>
+        .profile-image {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+    </style>
+    <img src="my image 1.jpg" alt="Profile Image" class="profile-image">
+</body>
+</html>

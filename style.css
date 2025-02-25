@@ -1,0 +1,11 @@
+body {
+    background-color: black;
+    ;
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    color: white;
+    font-size: 18px; /* Set the desired font size */
+    font-weight: bold; /* Make the text bold */
+    font-style: italic; /* Make the text italic */
+}
