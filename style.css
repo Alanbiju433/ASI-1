@@ -32,10 +32,10 @@ body {
 }/* Profile image styles */
 /* Profile image styles */
 .profile-img {
-  width: 100%;
-  max-width: 150px; /* Adjust based on your design */
+  width: 50%;
+  max-width: 50px; /* Adjust based on your design */
   height: auto;
-  max-height: 150px; /* Add this line */
+  max-height: 50px; /* Add this line */
   border-radius: 50%; /* Optional: make the image circular */
 }
 
@@ -45,5 +45,5 @@ body {
   justify-content: center;
   align-items: center;
   padding: 20px;
-  max-width: 100%;
+  max-width: 90%;
 }
