@@ -30,10 +30,12 @@ body {
     padding: 0 20px;
   }
 }/* Profile image styles */
+/* Profile image styles */
 .profile-img {
   width: 100%;
   max-width: 150px; /* Adjust based on your design */
   height: auto;
+  max-height: 150px; /* Add this line */
   border-radius: 50%; /* Optional: make the image circular */
 }
 
