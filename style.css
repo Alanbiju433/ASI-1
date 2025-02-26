@@ -29,4 +29,19 @@ body {
     width: 100%;
     padding: 0 20px;
   }
+}/* Profile image styles */
+.profile-img {
+  width: 100%;
+  max-width: 150px; /* Adjust based on your design */
+  height: auto;
+  border-radius: 50%; /* Optional: make the image circular */
+}
+
+/* Container styles */
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  max-width: 100%;
 }
