@@ -1,51 +1,10 @@
-body {
-    background-color: black;
-    ;
-    background-size: cover;
-    background-position: center;
-    font-family: Arial, sans-serif;
-    color: white;
-    font-size: 18px; /* Set the desired font size */
-    font-weight: bold; /* Make the text bold */
-    font-style: italic; /* Make the text italic */
-}
-/* Default styles for desktop */
-body {
-  font-size: 16px;
-}
-
-.container {
-  width: 1000px;
-  margin: 0 auto;
-}
-
-/* Styles for mobile devices */
-@media screen and (max-width: 768px) {
-  body {
-    font-size: 14px;
-  }
-
-  .container {
-    width: 100%;
-    padding: 0 20px;
-  }
-}/* Profile image styles */
-/* Profile image styles */
 .profile-img {
-  width: 50%;
-  max-width: 50px; /* Adjust based on your design */
-  height: auto;
-  max-height: 50px; /* Add this line */
-  border-radius: 50%; /* Optional: make the image circular */
-}
-
-/* Container styles */
-.profile-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  max-width: 90%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
 nav {
     display: flex;
@@ -53,26 +12,25 @@ nav {
     background: #ea0303;
     padding: 8px 0;
 }
-
 nav ul {
     display: flex;
-    gap: 20px; /* Add space between the list items */
+    gap: 20px;
     padding: 0;
     margin: 0;
     list-style-type: none;
 }
-
+nav li {
+    position: relative;
+}
 nav a {
     color: #0f08ec;
     text-decoration: none;
     padding: 8px 16px;
     position: relative;
 }
-
 nav a:hover {
     background: #625d5d;
 }
-
 nav a:hover::after {
     content: '';
     display: block;
@@ -84,7 +42,26 @@ nav a:hover::after {
     background: #0f08ec;
     bottom: -5px;
 }
-
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #ea0303;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+nav ul ul li {
+    display: block;
+}
+nav ul ul a {
+    padding: 8px 16px;
+    width: 160px;
+}
+nav ul li:hover > ul {
+    display: block;
+}
 .container {
     max-width: 1200px;
     margin: 32px auto;
