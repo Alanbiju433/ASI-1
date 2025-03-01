@@ -47,3 +47,26 @@ body {
   padding: 20px;
   max-width: 90%;
 }
+nav {
+    display: flex;
+    justify-content: center;
+    background: #ea0303;
+    padding: 8px 0;
+}
+
+nav a {
+    color: #0f08ec;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+
+nav a:hover {
+    background: #625d5d;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 32px auto;
+    padding: 0 32px;
+}
+
