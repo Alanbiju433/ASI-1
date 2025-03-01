@@ -1,10 +1,10 @@
 .profile-img {
-    width: 100px;
-    height: 100px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 20px;
+    right: 20px;
 }
 nav {
     display: flex;
@@ -29,7 +29,7 @@ nav a {
     position: relative;
 }
 nav a:hover {
-    background: #625d5d;
+    background: #blue;
 }
 nav a:hover::after {
     content: '';
