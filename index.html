@@ -6,50 +6,116 @@
     <title>Alan Biju</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.webp" type="image/x-icon">
-    <style>
+     <style>
+     <style>
         .profile-img {
+        nav {
             width: 100px;
+            display: flex;
             height: 100px;
+            justify-content: center;
             border-radius: 50%;
+            background: #ea0303;
             position: absolute;
+            padding: 8px 0;
             top: 10px;
             right: 10px;
+         }
+    <style>
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #ea0303;
+            padding: 8px 0;
         }
         nav ul {
-            list-style-type: none;
+            display: flex;
+            gap: 20px;
             padding: 0;
+            margin: 0;
+            list-style-type: none;
         }
-        nav ul li {
-            display: inline;
-            margin-right: 15px;
+        nav li {
+            position: relative;
         }
-    </style>
+        nav a {
+            color: #0f08ec;
+            text-decoration: none;
+            padding: 8px 16px;
+            position: relative;
+        }
+        nav a:hover {
+            background: #625d5d;
+        }
+        nav a:hover::after {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            height: 3px;
+            background: #0f08ec;
+            bottom: -5px;
+        }
+        nav ul ul {
+            display: none;
+            position: absolute;
+            top: 40px;
+            left: 0;
+            background: #ea0303;
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+        nav ul ul li {
+            display: block;
+        }
+        nav ul ul a {
+            padding: 8px 16px;
+            width: 160px;
+        }
+        nav ul li:hover > ul {
+            display: block;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 32px auto;
+            padding: 0 32px;
+        }
     </style>
 </head>
 <body>
     <div class="header">
         <h1>Alan Biju</h1>
-       </script>
-    <style>
-        .profile-image {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            width: 250px;
-            height: 250px;
-            border-radius: 50%;
-        }
-    </style>
-    <img src="my image.jpg" alt="Profile Image" class="profile-image">
+        <img src="https://github.com/Alanbiju433/Asi-1/raw/main/my%20image.jpg" alt="My Image" class="profile-img">
     </div>
     
     <link rel="icon" href="https://github.com/Alanbiju433/Asi-1/raw/main/favicon.webp" type="image/webp">
     
     <nav>
         <ul>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="contactme.html">Contact Me</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="about.html">About Me</a>
+                <ul>
+                    <li><a href="#bio">Biography</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                </ul>
+            </li>
+            <li><a href="contactme.html">Contact Me</a>
+                <ul>
+                    <li><a href="#email">Email</a></li>
+                    <li><a href="#phone">Phone</a></li>
+                    <li><a href="#social">Social Media</a></li>
+                </ul>
+            </li>
+            <li><a href="#projects">Projects</a>
+                <ul>
+                    <li><a href="#project1">Project 1</a></li>
+                    <li><a href="#project2">Project 2</a></li>
+                    <li><a href="#project3">Project 3</a></li>
+                </ul>
+            </li>
         </ul>
     </nav>
 
