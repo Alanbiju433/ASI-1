@@ -12,9 +12,10 @@
     <div class="header">
         <h1>Alan Biju</h1>
         <img src="https://github.com/Alanbiju433/Asi-1/raw/main/my%20image.jpg" alt="My Image" class="profile-img">
+        <div class="hamburger" onclick="toggleNav()">☰</div>
     </div>
     
-    <nav>
+    <nav id="nav-menu">
         <ul>
             <li><a href="about.html">About Me</a>
                 <ul>
@@ -59,5 +60,16 @@
         <p>Instagram: <a href="https://www.instagram.com/" target="_blank">https://www.instagram.com/</a></p>
         <p>Facebook: <a href="https://www.facebook.com/?locale=en_GB" target="_blank">https://www.facebook.com/?locale=en_GB</a></p>
     </div>
+
+    <script>
+        function toggleNav() {
+            var nav = document.getElementById("nav-menu");
+            if (nav.style.display === "block") {
+                nav.style.display = "none";
+            } else {
+                nav.style.display = "block";
+            }
+        }
+    </script>
 </body>
 </html>
