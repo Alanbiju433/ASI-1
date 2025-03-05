@@ -67,3 +67,7 @@ nav ul li:hover > ul {
     margin: 32px auto;
     padding: 0 32px;
 }
+:target {
+    background-color: yellow; /* Highlight color */
+    padding: 10px;
+}
