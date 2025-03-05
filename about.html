@@ -3,120 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" media="screen">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 800px)">
     <link rel="icon" href="favicon.webp" type="image/x-icon">
-    <title>About Me</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #77aaff 3px solid;
-        }
-        header a {
-            color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-        header ul {
-            padding: 0;
-            list-style: none;
-        }
-        header li {
-            display: inline;
-            padding: 0 20px 0 20px;
-        }
-        .main {
-            padding: 20px;
-            background: #fff;
-            margin-top: 20px;
-        }
-        .return-button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #333;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        :target {
-    background-color: yellow; /* Highlight color */
-    padding: 10px;
-}
-    </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>About Me</h1>
-        </div>
-    </header>
-    <div class="container main">
-        <h2>Hello, I'm Alan Biju</h2>
-        <p>Welcome to my personal page. Here is a little bit about myself:</p>
-        <section id="bio">
-            <h3>Biograghy</h3>
-         <p>I am a bachelor's student in AI and Data Science at the University of Northampton.</p>
-<P>My journey in education began in Kerala, where I completed my higher secondary education at GHSS Sadhanadhapuram with full A+ and a 92.45% score.</p>
-<p>I also passed my SSLC with full A+ at St. Mary's HSS Kizhekketheruvu, achieving above 90%.</p>
-<p>My professional experience spans various roles, including billing assistant at a dry-clean shop, waiter at Cousins Restaurant, hospitality staff at Constellation, and care home worker.</p>
-<p>My skills include writing, Microsoft Excel, Word, PowerPoint, coding, and cooking.</p>
-<p>I am passionate about soccer, writing, reading, artificial intelligence, and enjoying nature.</p>
-<p>My achievements include district-level A grade in the Young Innovators Program 2024 and third position in the Kerala school-level science fair 2024.</p><p> I have also participated twice in the Young Innovators Program and have received various scholarships.</p>
-
-        </section>
-        <section id="education">
-            <h4>Education</h4>
-          <p>Pursuing Bsc AI and Data Science in university of northampton(2024-ongoing)</p>
-
-          <p>  Completed plus two (A level) in G H S S Sadhanadhapuram, Kerala,INDIA (2022-2024)(Biology Science)</p>
-
-            <p>completed S S L C (G C S E ) in St mary's H S S in KIZHEKKTHERUVU, Kerala,INDIA(2021-2022)</p>
-        </section>
-        <section id="skills">
-            <h5>Skills</h5>
-          <p>Microsoft word</p>
-            <p>Microsoft excel</p>
-           <p> Microsoft Power Point</p>
-            <p>writing</p>
-            <p>cooking</p>
-            <p>Calmness</p>
-            <p>Coding</p>
-            <p>Positivity</p>
-            <p>Communication</p>
-            <p>Continous Learning</p>
-        </section>
-        <button class="return-button" onclick="goBack()">Return</button>
+    <div class="header">
+        <h1>Alan Biju</h1>
+        <img src="my image 1.jpg" alt="Profile Image" class="profile-img">
+        <div class="hamburger" onclick="toggleNav()">☰</div>
+    </div>
+    <nav id="nav-menu">
+        <ul>
+            <li><a href="about.html">About Me</a>
+                <ul>
+                    <li><a href="about.html#bio" target="_self">Biography</a></li>
+                    <li><a href="about.html#education" target="_self">Education</a></li>
+                    <li><a href="about.html#skills" target="_self">Skills</a></li>
+                </ul>
+            </li>
+            <li><a href="contactme.html">Contact Me</a>
+                <ul>
+                    <li><a href="#email">Email</a></li>
+                    <li><a href="#phone">Phone</a></li>
+                    <li><a href="#social">Social Media</a></li>
+                </ul>
+            </li>
+            <li><a href="#projects">Projects</a>
+                <ul>
+                    <li><a href="#project1">Project 1</a></li>
+                    <li><a href="#project2">Project 2</a></li>
+                    <li><a href="#project3">Project 3</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div class="content">
+        <h2>About Me</h2>
+        <p>Hello! My name is Alan. I am currently a bachelor's student at the University of Northampton pursuing BSc AI and Data Science.</p>
+        <ul>
+            <li>Age: 19</li>
+            <li>Date of birth: 18/01/2006</li>
+            <li>Have worked on various projects as part of the Young Innovators Program and school science fair</li>
+            <li>Looking forward to enjoying the tech world's beauty</li>
+            <li>Life is like a rollercoaster, it has its ups and downs, but it's your choice to either scream or enjoy the ride. -Avril Lavigne</li>
+        </ul>
+    </div>
+    <div class="details">
+        <h3>Contact Information</h3>
+        <p>Email: alan.biju24@my.northampthon.ac.uk</p>
+        <p>Phone: +44 7887155173</p>
+        <p>Instagram: <a href="https://www.instagram.com/" target="_blank">https://www.instagram.com/</a></p>
+        <p>Facebook: <a href="https://www.facebook.com/?locale=en_GB" target="_blank">https://www.facebook.com/?locale=en_GB</a></p>
     </div>
     <script>
-        function goBack() {
-            window.history.back();
+        function toggleNav() {
+            var nav = document.getElementById("nav-menu");
+            if (nav.style.display === "block") {
+                nav.style.display = "none";
+            } else {
+                nav.style.display = "block";
+            }
         }
     </script>
-    <style>
-        .profile-image {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-        }
-    </style>
-    <img src="my image 1.jpg" alt="Profile Image" class="profile-image">
 </body>
 </html>
