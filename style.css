@@ -71,3 +71,9 @@ nav ul li:hover > ul {
     background-color: yellow; /* Highlight color */
     padding: 10px;
 }
+body {
+    background-image: url('https://sl.bing.net/eryb1WDYppI');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
