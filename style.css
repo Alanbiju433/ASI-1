@@ -29,7 +29,7 @@ nav a {
     position: relative;
 }
 nav a:hover {
-    background: #blue;
+    background: blue;
 }
 nav a:hover::after {
     content: '';
